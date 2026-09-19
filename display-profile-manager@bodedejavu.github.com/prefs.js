@@ -204,7 +204,7 @@ const ProfilesSettingsWidget = new GObject.Class({
         let grid = new Gtk.Grid({margin_left: 20});
         
         if (this._profiles.length > 0) {
-            let isExpert = this._settings.get_boolean(Common.SETTINGS_KEY_EXPERT_MODE, isExpert);
+            let isExpert = this._settings.get_boolean(Common.SETTINGS_KEY_EXPERT_MODE, false);
             
            	let iEntry;
            	let iGrid;
